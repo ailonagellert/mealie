@@ -1,9 +1,8 @@
 name: Scheduled Checks
 
 on:
-  schedule:
-    # Every monday at 7 AM
-    - cron: 0 7 * * 1
+  # Fork: cron disabled (was failing weekly and notifying). Manual only.
+  workflow_dispatch:
 
 jobs:
   update:
